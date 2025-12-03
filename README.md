@@ -1,4 +1,15 @@
 # Installation
+
+### Firsi Time Installation
+
+```
+pkg update -y && pkg upgrade -y
+pkg install python git curl wget nano openssl android-tools -y
+termux-setup-storage
+pip install requests faker python-dateutil pycryptodome
+```
+### Run Tools
+
 ```Bash
 cd $HOME
 rm -rf Roton
