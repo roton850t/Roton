@@ -1,1 +1,16 @@
-import p1_XD
+import platform
+import sys
+
+def main():
+    if platform.architecture()[0] == "64bit":
+        try:
+            import stex_XD
+        except ImportError:
+            print("Module stex_XD not found!")
+            sys.exit(1)
+    else:
+        print("32bit Not Supported! Sorry")
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()
