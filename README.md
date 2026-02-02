@@ -3,18 +3,29 @@
 ### Firsi Time Installation
 
 ```
-pkg update -y && pkg upgrade -y
-pkg install python git curl wget nano openssl android-tools -y
+pkg update
+pkg upgrade
+pkg install python
+pip install requests
+pip install mechanize
+pip install bs4
+pkg install git
+pip install rich
+pkg install espeak
+pip install pycurl
+pip install httpx
+pip cache purge
+pip install openpyxl
+pip install pycryptodome
 termux-setup-storage
-pip install requests faker python-dateutil pycryptodome
-```
 ### Run Tools
 
 ```Bash
-cd $HOME
-rm -rf Roton
-git clone --depth=1 https://github.com/roton850/Roton.git
-cd Roton
+git clone https://github.com/roton850t/stexsms
+
+cd stexsms
+
 git pull
-python roton.py
+
+python rotonss.py
 ```
